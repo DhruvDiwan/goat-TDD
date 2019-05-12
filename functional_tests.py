@@ -14,7 +14,7 @@ class NewVisitorTest(unittest.TestCase):
 		self.browser.get('http://localhost:8000')
 
 		self.assertIn('To-Do' , self.browser.title)
-		
+
 		header_text = self.browser.find_element_by_tag_name('h1').text
 		self.assertIn('To-Do' , header_text)
 
@@ -23,8 +23,8 @@ class NewVisitorTest(unittest.TestCase):
 
 		inputbox.send_keys('Buy peacock feathers')
 		inputbox.send_keys(Keys.RETURN)
-		
-		time.sleep(10)
+
+		time.sleep(1)
 
 		table = self.browser.find_element_by_id('id_list_table')
 		rows = table.find_elements_by_tag_name('tr')
