@@ -2,3 +2,9 @@ db.sqlite3
 geckodriver.log
 __pycache__
 *.pyc
+Include
+Lib
+Scripts
+tcl
+.vs
+superlists/LICENSE.txt
