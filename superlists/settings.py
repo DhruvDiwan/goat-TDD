@@ -25,7 +25,7 @@ SECRET_KEY = 'b49%1yc&+4zj6m75#whn(#=n%htbtn$_mm1v8m-m9i7^k0nalx'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -121,5 +121,3 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT =  os.path.abspath(os.path.join(BASE_DIR, '../static'))
-
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
